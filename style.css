@@ -1,0 +1,152 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #12102b;   /* fundo escuro */
+  color: white;                /* letra clara */
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;                   
+  justify-content: space-between;  
+  align-items: center;              
+  padding: 20px 40px;
+  background-color: #1e1a45;
+}
+
+.links {
+  display: flex;
+  gap: 20px;                        
+}
+
+.apresentacao {
+  display: flex;                    
+  align-items: center;
+  gap: 40px;
+  padding: 60px 40px;
+}
+
+.texto {
+  flex: 1;                         
+}
+
+.texto h1 {
+  font-size: 48px;
+  color: #a78bfa;                   
+  margin: 10px 0;
+}
+
+.botao {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #7c3aed;       
+  border-radius: 8px;
+}
+
+.imagem {
+  flex: 1;                       
+  text-align: center;
+}
+
+.imagem img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20px;
+  background-color: #7c3aed;
+}
+
+.cartoes {
+  display: flex;
+  gap: 20px;
+  padding: 0 40px 40px 40px;
+}
+
+.cartao {
+  flex: 1;                         
+  background-color: white;
+  color: #12102b;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.secao {
+  padding: 40px;
+}
+
+.secao h2 {
+  color: #a78bfa;
+  margin-bottom: 20px;
+}
+
+.lista-habilidades {
+  display: flex;
+  flex-wrap: wrap;                 
+  gap: 15px;
+}
+
+.lista-habilidades span {
+  border: 2px solid #7c3aed;
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+
+.lista-projetos {
+  display: flex;
+  gap: 20px;
+}
+
+.projeto {
+  flex: 1;
+  background-color: #1e1a45;
+  border: 1px solid #7c3aed;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/*TABLET*/
+@media (max-width: 900px) {
+  .cartoes {
+    flex-wrap: wrap;          
+  }
+
+  .cartao {
+    flex: 1 1 40%;               
+  }
+}
+
+/*CELULAR*/
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;      
+    gap: 10px;
+  }
+
+  .apresentacao {
+    flex-direction: column;   
+    text-align: center;
+  }
+
+  .texto h1 {
+    font-size: 32px;
+  }
+
+  .cartoes {
+    flex-direction: column;      
+  }
+
+  .lista-projetos {
+    flex-direction: column;        
+  }
+}
